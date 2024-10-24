@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Educational Check Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="time"], input[type="checkbox"] {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings</h1>
+  <label>
+    Start Time:
+    <input type="time" id="startTime">
+  </label>
+  <label>
+    End Time:
+    <input type="time" id="endTime">
+  </label>
+  <h2>Days of the week:</h2>
+  <label><input type="checkbox" id="monday"> Monday</label>
+  <label><input type="checkbox" id="tuesday"> Tuesday</label>
+  <label><input type="checkbox" id="wednesday"> Wednesday</label>
+  <label><input type="checkbox" id="thursday"> Thursday</label>
+  <label><input type="checkbox" id="friday"> Friday</label>
+  <label><input type="checkbox" id="saturday"> Saturday</label>
+  <label><input type="checkbox" id="sunday"> Sunday</label>
+  <br>
+  <button id="save">Save Settings</button>
+  <h2>Pass Usage</h2>
+  <p id="passCount">Passes used today: 0</p>
+  <button id="resetPass">Reset Pass Count</button>
+  <script src="options.js"></script>
+</body>
+</html>

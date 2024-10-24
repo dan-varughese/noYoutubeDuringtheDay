@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Educational Check",
+  "version": "1.6",
+  "description": "Checks if YouTube is being used for educational purposes during customizable hours, with a daily pass option and session-based prompts",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
